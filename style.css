@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+}
+
+:root {
+    --bg-color: #fdfdfd
+    --text-color: #fff
+    --maian-color: #754ef9
+    --white-color: #fdfdfd
+    --shadow-color: rgba(0, 0, 0, .2);
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    color:#fff;
+    font-weight: 600;
+    cursor: default;
+    margin-right: 60px;
+}
+.navbar a {
+font-size: 25px;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+text-align: right;
+margin-right: 30px;
+transition: .3s;
+text-align: right;
+position: relative;
+
+
+}
+.navbar li a::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #0ef;
+  left: 0;
+  bottom: -10px;
+  transition: 1s;
+}
+.navbar li a:hover::after {
+  width: 100%;
+}
+.navbar button {
+  flex-basis: 40%;
+  background: transparent;
+  color: #fff;
+  height: 40px;
+  border-radius: 17px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+.navbar ul {
+  float: right;
+}
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  border-radius: 10px;
+  background: transparent;
+}
+.navbar a:hover
+{
+  color: #0ef;
+  box-shadow: 0 0 5px cyan,
+  0 0 10px cyan, 0 0 25px cyan,
+  0 0 50px cyan, 0 0 100px cyan
+
+}
+.home {
+   background: #0c1022;
+ min-height: 100vh;
+}
+.home-content h1 span {
+    color: #0ef;
+    font-size: 60px;
+    text-align: center;
+}
+.home-content {
+    font-size: 25px;
+    color:#fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 110px 10% 20%;
+    
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 7% 2rem;
+
+}
+.home-content .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 20px 30px;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 1 ease;
+    box-shadow: 0 .2rem .5rem rgb(67, 177, 174);
+}
+ .social-media a:hover {
+    color: #0ef;
+    transition: .4s;
+    margin-block-start: 25px;
+    
+ }
+ .social-media a:hover {
+  box-shadow: 0 0 5px cyan,
+  0 0 10px cyan, 0 0 25px cyan,
+  0 0 50px cyan, 0 0 100px cyan
+
+}
+ span {
+    color: #0ef;
+ }
+ .about {
+  background: #0c1022;
+min-height: 100vh;
+}
+.about-content {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -1px 0;
+    
+}
+.location-text h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -1px 0;
+    
+
+
+}
+
+
+.location-text h1 span {
+    color: #0ef
+}
+ 
+.contact {
+  background: #0c1022;
+min-height: 100vh;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(22, 32, 66);
+    color: white;
+    cursor: pointer;
+  }
+  .hobbies{
+    background: #0c1022;
+  min-height: 100vh;
+ }
+  
+  .location {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    color: #fff;
+    background: #0c1022;
+  min-height: 100vh;
+  padding: 40PX;
+  width: 100%;
+  margin: 10rem auto0 auto;
+ }
+ iframe {
+  position: absolute;
+  display: flex;
+  border-radius: 21px;
+  top: 231px;
+  left: 94px;                    
+  height: 52%;
+  width: 36%;
+  
+}
+
+  .hobbies {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -1px 0;
+    color: #fff;
+  }
+  .contact {
+    font-size: 30px;
+    font-weight: 400;
+    margin: -1px 0;
+  }
+.tenor-gif-embed {
+  align-items: flex-end;
+  background: transparent;
+  size-adjust: 25px;
+}
+.contact {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url(wallpaper.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+  text-align: center;
+}
+.contact-text h1 {
+  font-size: 90px;
+  line-height: 1;
+  text-align: center;
+}
+.contact-text h1 span {
+  color: #0ef;
+}
+.contact-list {
+  margin-bottom: 3rem;
+
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-list li {
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-list li {
+  display: inline-block;
+  color: #0ef;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all .40s ease;
+}
+.contact-list li a:hover {
+  transform: scale(1.01) translateY(-5px);
+  color: #0ef;
+}
+.contact-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+
+}
+.contact-icons a:hover  {
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 20px #0ef;
+
+}
+.location img {
+
+  position: absolute;
+  display: flex;
+  border-radius: 21px;
+  top: 207px;
+  left: 778px;
+  height: 35%;
+  width: 20%;
+}
+.location img p {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 20px 0;
+  width: -38%;
+  font-size: 30px;
+  font-weight: 150;
+  height: 10%;
+  top: 60%;
+  left: 30%;
+  margin: 33rem auto 0 auto;
+}
+.homeimage img{
+  position: absolute;
+  display: flex;
+  border-radius: 216px;
+  height: 65%;
+  width: 26%;
+}
+.homeimage img {
+  top: 178px;
+  left: 975px;
+  height: 60%;
+  width: 22%;
+
+}
+#vid1{
+  display: flex;
+  position: relative;
+  top: 12px;
+  left: 169px;
+}
+#para{
+  display: flex;
+    position: relative;
+    top: 366px;
+    left: 683px;
+}
+#hobbiestext {
+  font-size: 30px;
+    font-weight: 300;
+}
+
+.vid2 {
+  display: flex;
+    position: relative;
+    top: -287px;
+    left: 711px;
+}
+.para2 {
+  font-size: 59px;
+  top: 84px;
+  display: flex;
+  position: relative;
+  left: 58px;
+}
